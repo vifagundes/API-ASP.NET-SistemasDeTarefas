@@ -18,7 +18,7 @@ namespace SistemasDeTarefas.Repositories
             return await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<List<UserModel>> SearchAllUsers()
+        public async Task<List<UserModel>> GetAllUsers()
         {
             return await _dbContext.Users.ToListAsync();
         }
